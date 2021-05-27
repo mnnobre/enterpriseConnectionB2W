@@ -1,0 +1,318 @@
+/* Simple Reset */
+
+body, html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Parameters */
+
+body, html {
+    background-color: #202124;
+    font: 62.5% "Inter", sans-serif;
+    font-weight: 400;
+    color: #777;
+}
+
+:root{
+    --primary: #17181c;
+    --secondary: #f32b2b;
+    --soft: #fafafa;
+}
+
+/* Page Settings */
+
+::-moz-selection {
+    background: var(--secondary);
+    color: var(--soft);
+    text-shadow: none;
+}
+
+::selection {
+    background: var(--secondary);
+    color: var(--soft);
+    text-shadow: none;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+
+section{
+    font-size: 1.6rem;
+    line-height: 1.48;
+}
+/* Utilities */
+
+.bg-dark {
+    background-color: var(--primary);
+    color: var(--soft);
+}
+
+.bg-soft {
+    background-color: #1c1b22;
+    color: var(--soft);
+}
+
+.bg-soft h3 {
+    color: var(--primary);
+}
+
+h3 {
+    text-transform: uppercase;
+    color: var(--soft);
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.p-s {
+    padding: 4%;
+}
+
+a, a:hover, a:visited {
+    color: var(--secondary);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+
+/* Headings */
+
+h1.title{
+    font-size: 4.8rem;
+    background-color: var(--secondary);
+    width: fit-content;
+    padding: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+h3.subtitle{
+    font-size: 2.4rem;
+    width: fit-content;
+    padding: 2px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+
+.box-2 p{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--soft);
+
+}
+
+/* Background */
+
+.box {
+    background-image: url(./images/bg-img.jpg);
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed; 
+}
+
+.box-2 {
+    background-image: url(./images/cloverfield2.jpg);
+    position: relative;
+    height: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 320px;
+}
+
+.aproximate {
+	-webkit-animation: aproximate 5s ease-out both;
+	        animation: aproximate 5s ease-out both;
+}
+
+
+@-webkit-keyframes aproximate {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+                transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+                transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+    }
+    }
+    @keyframes aproximate {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+                transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+                transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+                transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+    }
+}
+
+/* Header */
+
+.logo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 24%;
+
+}
+
+.navbar a {
+    font-size: 2rem;
+    color: var(--soft);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    font-size: 2rem;
+    background-color: var(--secondary);
+    text-decoration: none;
+}
+
+/* Sections */
+
+section {
+    min-height: 560px;
+}
+
+section .row {
+    padding: 0 4%;
+}
+
+.img-section{
+    height: 540px;
+    width: auto;
+    margin: 0 24px;
+    box-shadow: 
+        0 1px 1px rgba(0,0,0,0.12), 
+        0 2px 2px rgba(0,0,0,0.12), 
+        0 4px 4px rgba(0,0,0,0.12), 
+        0 8px 8px rgba(0,0,0,0.12),
+        0 16px 16px rgba(0,0,0,0.12);
+}
+
+.banner-discovery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.banner-discovery span {
+    color: var(--soft);
+    background-color: var(--secondary);
+}
+
+/* Cards */
+#restaurants {
+    padding: 32px 24px;
+}
+
+.card {
+    width: auto;
+    height: 480px;
+    margin: 4%;
+    background-color: var(--primary);
+    box-shadow: 
+    0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.img-card{
+    height: 240px;
+    width: 100%;
+    padding: 0;
+}
+
+.p-card {
+    height: auto;
+    text-align: center;
+    padding: 24px 24px;
+    box-sizing: content-box;
+}
+
+.p-card h3 {
+    height: 64px;
+}
+
+.p-card p {
+    color: var(--soft);
+    opacity: 0.7;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 96px;
+    margin: 0 auto;
+    line-height: 1;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.p-card i {
+    margin-bottom: 16px;
+}
+
+/* Footer */
+
+.arrow {
+    position: fixed;
+    bottom: 48px;
+    right: 64px;
+}
+
+.arrow img{
+    height: 64px;
+    width:auto;
+}
