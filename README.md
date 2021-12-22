@@ -3,7 +3,7 @@
 Projeto de conclusão da fase 2 1 proposto pela B2W em conjunto com a FIAP
 
 <div>
- Aqui você pode ver o resultado do projeto: https://mnnobre.github.io/enterpriseConnectionB2W/
+ Aqui você pode ver o resultado do projeto: <a href="https://mnnobre.github.io/enterpriseConnectionB2W/"/>EnterpriseConnectionB2W</a>
 </div>
 
 ## 🛠️ Construído com
@@ -14,4 +14,4 @@ Projeto de conclusão da fase 2 1 proposto pela B2W em conjunto com a FIAP
 
 ## ✒️ Autores
 
-* **Matheus Nobre** - *Trabalho Inicial* - [Mnnobre](https://github.com/mnnobre)
+* **Matheus Nobre** - *Desenvolvedor* - [Mnnobre](https://github.com/mnnobre)
